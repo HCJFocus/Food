@@ -81,6 +81,7 @@ body{
         padding-right: 24px;
         padding-left: 24px;
         border-radius: 4px;
+        transition: all 0.3s ease;
     }
 }
 .base{
@@ -118,6 +119,7 @@ body{
         border-radius: 4px;
         text-decoration: none;
         margin-right: 24px;
+        transition: all 0.3s ease;
     }
     &__link{
         color: $green;
@@ -129,7 +131,7 @@ body{
         border: 0.5px solid $green;
         border-radius: 4px;
         text-decoration: none;
-
+        transition: all 0.3s ease;
     }
     &__item{
         width: 615px;
@@ -362,12 +364,15 @@ body{
             background-color: $green;
             border-radius: 4px;
             padding: 10px;
+            color: $white;
+            transition: all 0.3s ease;
         }
         &__share{
             background-color: #010101;
             border-radius: 4px;
             padding: 10px;
             margin-left: 20px;
+            transition: all 0.3s ease;
         }
     }
     .info-product{
@@ -399,6 +404,7 @@ body{
         align-items: center;
         margin: 0 auto;
         border-radius: 6px;
+        transition: all 0.3s ease;
         i{
             margin-left: 16px;
         }
@@ -597,6 +603,7 @@ body{
         padding-left: 24px;
         border: none;
         border-radius: 4px;
+        transition: all 0.3s ease;
     }
 }
 .footer{
@@ -646,6 +653,7 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.3s ease;
         }
         &_item:last-child{
             margin-right: 0;
@@ -659,6 +667,53 @@ body{
         text-decoration: none;
     }
 }
+
+//hovers
+.sign-up__link:hover{
+    transition: all 0.3s ease;
+    color: $green;
+    border: 0.5px solid $green;
+    background: transparent;
+}
+.base__btn:hover{
+    transition: all 0.3s ease;
+    color: $green;
+    border: 0.5px solid $green;
+    background: transparent;
+}
+.base__link:hover{
+    color: $white;
+    background-color: $green;
+    transition: all 0.3s ease;
+}
+.vista__like:hover{
+    background-color: #010101;
+    transition: all 0.3s ease;
+}
+.vista__share:hover{
+    background-color: $green;
+    transition: all 0.3s ease;
+}
+.products__btn:hover{
+    color: $green;
+    border: 0.5px solid $green;
+    background: transparent;
+}
+.products__btn:hover i{
+    color: $green;
+    background: transparent;
+}
+.sub-btn:hover{
+    color: $green;
+    border: 0.5px solid $green;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.footer__social-list_item:hover{
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+//adaptive
 @media (max-width: 1440px){
     .base__item{
         width: 450px;
@@ -725,6 +780,63 @@ body{
     .sub{
         left: 3.5%;
         width: 950px;
+    }
+}
+@media (max-width: 880px){
+    .header__container{
+        justify-content: space-around;
+    }
+    .container{
+        width: 785px;
+    }
+    .base__container{
+        text-align: center;
+    }
+    .place{
+        flex-direction: column;
+    }
+    .place__img{
+        position: relative;
+        right: 25%;
+    }
+    .opnion .container{
+        width: 795px;
+    }
+    .opnion-box{
+        padding-left: 70px;
+    }
+    .opnion-man-img{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .footer__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub{
+        width: 740px;
+    }
+    .base{
+        flex-direction: column;
+    }
+    .sub-title{
+        font-size: 36px;
+    }
+    .footer__column{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer__column-title{
+        margin-bottom: 5px;
+    }
+    .footer__column:last-child{
+        margin-bottom: 0;
+    }
+    .footer__social-list{
+        justify-content: center;
     }
 }
 @media (max-width: 768px){
