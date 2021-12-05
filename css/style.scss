@@ -699,7 +699,7 @@ body{
         padding-right: 0px;
     }
     .sub{
-        left: 17.5%;
+        left: 11.5%;
         width: 944px;
     }
     .opnion-man-img{
@@ -798,5 +798,40 @@ body{
     }
     .footer__column-title{
         margin-bottom: 10px;
+    }
+}
+@media(max-width: 425px){
+    .opnion{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .opnion-comment{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .place__img-absolute{
+        display: none;
+    }
+    .sub{
+        display: none;
+    }
+    .base__item{
+        width: 400px;
+    }
+    .opnion-box{
+        padding-left: 155px;
+        width: 140px;
+    }
+    .place{
+        margin-bottom: 100px;
+    }
+    .service{
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+    .products{
+        margin-bottom: 100px;
     }
 }
