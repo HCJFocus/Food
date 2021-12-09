@@ -558,10 +558,14 @@ body{
             height: 64px;
             border-radius: 4px;
             background-color: #fff;
+            position: relative;
             &_field{
                 border: none;
                 padding-left: 24px;
                 outline: none;
+                width: 100%;
+                height: 100%;
+                padding-right: 150px;
             }
             &_field::placeholder{
                 font-weight: normal;
@@ -570,6 +574,11 @@ body{
                 color: $grey;
             }
         }
+    }
+    .js-validate-error-label{
+        position: absolute;
+        bottom: 20px;
+        left: 280px;
     }
     &-title{
         font-weight: 600;
@@ -754,7 +763,7 @@ body{
         padding-right: 0px;
     }
     .sub{
-        left: 11.5%;
+        left: 17.5%;
         width: 944px;
     }
     .opnion-man-img{
@@ -782,7 +791,7 @@ body{
         width: 950px;
     }
 }
-@media (max-width: 880px){
+@media (max-width: 800px){
     .header__container{
         justify-content: space-around;
     }
@@ -818,6 +827,10 @@ body{
     }
     .sub{
         width: 740px;
+        .js-validate-error-label{
+            bottom: 0;
+            left: 185px;
+        }
     }
     .base{
         flex-direction: column;
@@ -837,6 +850,20 @@ body{
     }
     .footer__social-list{
         justify-content: center;
+    }
+    .place__text{
+        text-align: center;
+    }
+    .place__title{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .place__text-item{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .place__descr{
+        margin: 0 auto;
     }
 }
 @media (max-width: 768px){
@@ -861,7 +888,7 @@ body{
         display: none;
     }
     .opnion{
-        width: 745px;
+        width: 768px;
     }
     .opnion-box{
         padding-left: 85px;
@@ -869,6 +896,9 @@ body{
     .sub{
         left: 2.8%;
         width: 706px;
+        .js-validate-error-label{
+            left: 160px;
+        }
     }
     .sub__box{
         padding-top: 40px;

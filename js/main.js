@@ -1,6 +1,9 @@
-$(document).ready(function(){
-    $('.header__burger').click(function(event){
-        $('.header__burger,.nav').toggleClass('active');
-        $('body').toggleClass('lock');
-    });
-});
+let validateForms = function(selector, rules){
+    new window.JustValidate(selector,{
+        rules: rules,
+        submitHandles: function(form){
+            let data = FormData(form);
+        }
+    })
+}
+validateForms('.sub__box-form', {email: {required: true, email:true}, tel: {required: true}});
